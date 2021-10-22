@@ -8,11 +8,7 @@ const randQuoteGen = () => {
     ];
     
     var randNum = Math.floor(Math.random() * quotes.length);
-    return quotes[randNum];
+    return `Your random quote is: "${quotes[randNum][0]}" by ${quotes[randNum][1]}`;
 };
 
-const messageGen = array => {
-    return `Your random quote is: "${array[0]}" by ${array[1]}`;
-}
-
-console.log(messageGen(randQuoteGen()));
+console.log(randQuoteGen());
